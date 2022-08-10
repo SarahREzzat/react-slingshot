@@ -5,7 +5,7 @@ jobs:
         - image: circleci/node:13.8.0
       steps:
         - checkout
-        - run: npm run lint
+        - run: npm run lint --fix
 
 workflows:
    webapp:

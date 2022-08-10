@@ -26,6 +26,8 @@ workflows:
    webapp:
       jobs: 
         - build 
-        - test
+        - test:
+            requires:
+              - build
 
 
